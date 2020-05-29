@@ -6,7 +6,7 @@ function App(props) {
     <>             
       <p> { usuario } </p>
       <input placeholder="usuario" className="usuarioInput" 
-            onChange={ e => setUsuario(e.target.value)} />
+            onChange={ e => setUsuario(e.target.value)} value = { usuario } />
       <button type="button">Pesquisar do uri</button>
     </>
   );
