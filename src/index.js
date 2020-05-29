@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Repos from './Repos';
 
 
 ReactDOM.render(
-  
-    <App title="Alo Ha Tarcnux" user="TNX"/>,
+  <App />,    
   document.getElementById('root')
 );
 
