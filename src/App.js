@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 
 function App(props) {
+  const [ usuario, setUsuario ] = useState('');
   return (    //Retornando um fragment 
-    <>       
-      <input placeholder="usuario" id="usuario" 
-           className="usuarioInput" name="usuario" />
-      <button type="button">Pesquisar</button>
+    <>             
+      <p> { usuario } </p>
+      <input placeholder="usuario" className="usuarioInput" 
+            onChange={ e => setUsuario(e.target.value)} />
+      <button type="button">Pesquisar do uri</button>
     </>
   );
 }
