@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import * as S from './styled';
 
 function Home(props) {
   const [ usuario, setUsuario ] = useState('');
@@ -11,12 +12,12 @@ function Home(props) {
     );
   }
   return (    //Retornando um fragment     
-    <>             
+    <S.Container>             
       <p> { usuario } </p>
-      <input placeholder="usuario" className="usuarioInput" 
+      <S.Input placeholder="usuario" className="usuarioInput" 
             onChange={ e => setUsuario(e.target.value)} value={ usuario } />
-      <button type="button" onClick={ handlePesquisa } >Pesquisar do uri</button>
-    </>
+      <S.Button type="button" onClick={ handlePesquisa } >Pesquisar do uri</S.Button>
+    </S.Container>
   );
 }
 
