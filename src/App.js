@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function App() {
-  return (
-    <h1>Alo Ha Mundo</h1>
+function App(props) {
+  return (    //Retornando um fragment 
+    <>       
+      <input placeholder="usuario" id="usuario" 
+           className="usuarioInput" name="usuario" />
+      <button type="button">Pesquisar</button>
+    </>
   );
 }
 
