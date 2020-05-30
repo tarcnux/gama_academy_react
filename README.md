@@ -1,3 +1,14 @@
+## package.json
+```
+{
+  "dependencies": {
+    "axios": "^0.19.2",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.1.1"
+  }
+}
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
