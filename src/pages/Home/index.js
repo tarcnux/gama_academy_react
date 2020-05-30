@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import * as S from './styled';
+import { useHistory } from 'react-router-dom';
 
 function Home(props) {
+  const history = useHistory();
   const [ usuario, setUsuario ] = useState('');
   function handlePesquisa() {
     //console.log(usuario);
@@ -16,6 +18,7 @@ function Home(props) {
         });
         //console.log(reposName);
         localStorage.setItem('reposName', JSON.stringify(reposName));       
+        history.push('/repos');
       });
   }
   return (    //Retornando um fragment     
